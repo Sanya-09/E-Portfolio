@@ -1,0 +1,159 @@
+body {
+  background-image: url("Images/language_bg.avif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+/* Navigation Links */
+a {
+  text-decoration: none;
+  margin-right: 10%;
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: gray;
+}
+
+a:link {
+  color: white;
+}
+
+/* Header */
+header {
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  margin: 3% 5% 0 9%;
+  color: white;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: aliceblue;
+  font-size: 3vw;
+  padding: 1%;
+  text-decoration: underline blanchedalmond;
+}
+
+/* Box Container */
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+/* Box Hover Effect (shared) */
+#box111:hover,
+#box112:hover,
+#box113:hover,
+#box114:hover,
+#box115:hover,
+#box116:hover {
+  transform: scale(1.1);
+  background-color: grey;
+}
+
+/* Box Styling (shared) */
+#box111,
+#box112,
+#box113,
+#box114,
+#box115,
+#box116 {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  margin: 15px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Box Text */
+p {
+  text-align: center;
+  font-size: 1.1em;
+  padding: 10px;
+}
+
+/* Logo/Image */
+img {
+  display: block;
+  margin: 40px auto;
+  max-width: 80%;
+  height: auto;
+}
+
+/* Tablet Adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 5vw;
+  }
+
+  .box-container {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #box111,
+  #box112,
+  #box113,
+  #box114,
+  #box115,
+  #box116 {
+    width: 160px;
+    height: 160px;
+    margin: 10px;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  img {
+    max-width: 90%;
+  }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 6vw;
+  }
+
+  #box111,
+  #box112,
+  #box113,
+  #box114,
+  #box115,
+  #box116 {
+    width: 140px;
+    height: 140px;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  header {
+    font-size: 1em;
+    text-align: center;
+    margin: 20px 10px;
+  }
+}

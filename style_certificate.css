@@ -1,0 +1,100 @@
+body {
+  background-image: url("Images/certificate_bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+/* Navigation Links */
+a {
+  text-decoration: none;
+  margin-right: 10%;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: gray;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.box2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  justify-content: center;
+}
+
+#a1, #a2, #a3, #a4 {
+  text-decoration: none;
+  color: black;
+  transition: transform 0.3s ease;
+}
+
+a:hover {
+  color: gray;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: black;
+  font-size: 3vw;
+  padding: 1%;
+  text-decoration: underline black;
+}
+
+/* Certificate Image */
+img {
+  display: block;
+  margin: 30px auto;
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .box2 {
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1em;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 6vw;
+  }
+
+  img {
+    max-width: 95%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 7vw;
+    padding: 10px 0;
+  }
+
+  .box2 {
+    gap: 15px;
+    font-size: 0.95em;
+  }
+}
