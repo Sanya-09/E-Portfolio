@@ -60,7 +60,8 @@ h1 {
 #box113:hover,
 #box114:hover,
 #box115:hover,
-#box116:hover {
+#box116:hover,
+#box117:hover {
   transform: scale(1.1);
   background-color: grey;
 }
@@ -71,7 +72,8 @@ h1 {
 #box113,
 #box114,
 #box115,
-#box116 {
+#box116,
+#box117 {
   width: 200px;
   height: 200px;
   background-color: white;
@@ -116,7 +118,8 @@ img {
   #box113,
   #box114,
   #box115,
-  #box116 {
+  #box116,
+  #box117{
     width: 160px;
     height: 160px;
     margin: 10px;
@@ -142,7 +145,8 @@ img {
   #box113,
   #box114,
   #box115,
-  #box116 {
+  #box116,
+  #box117 {
     width: 140px;
     height: 140px;
   }
