@@ -1,29 +1,71 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificates</title>
-    <link rel="stylesheet" href="style_certificate.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificates</title>
+  <link rel="stylesheet" href="style_certificate.css">
 </head>
 <body>
-    <div id="hhh">
-        <h1>CERTIFICATES</h1>
+  <!-- Header -->
+  <div id="hhh">
+    <h1>CERTIFICATES</h1>
+  </div>
+
+  <!-- Certificates Grid -->
+  <div class="certificate-container">
+    <div class="certificate-item">
+      <img src="Images/csa-hacathon.png" alt="CSA Hackathon Certificate">
+      <p>CSA Hackathon</p>
     </div>
-    <img id="img1" src="Images/csa-hacathon.png">
-    <p></p>
-    <img src="Images/GuviCertification - 55ug2RjDQ41402S747.png">
-    <p></p>
-    <img id="img1" src="Images/generative-ai.png">
-    <p></p>
-    <img src="Images/web-design.png">
-    <p></p>
-     <img id="img1" src="Images/py_certificate.png">
-    <p></p>
-    <img  src="Images/unstop.png">
-    <p></p>
-    <img  id="img1" src="Images/java+python.png">
-    <p></p>
-    <img  src="Images/nss.jpeg">
-    <p></p>
+    <div class="certificate-item">
+      <img src="Images/GuviCertification - 55ug2RjDQ41402S747.png" alt="Guvi Certification">
+      <p>Guvi Certification</p>
+    </div>
+    <div class="certificate-item">
+      <img src="Images/generative-ai.png" alt="Generative AI Certificate">
+      <p>Generative AI</p>
+    </div>
+    <div class="certificate-item">
+      <img src="Images/ieee.png" alt="IEEE">
+      <p>GitXplore</p>
+    </div>
+    <div class="certificate-item">
+      <img src="Images/web-design.png" alt="Web Design Certificate">
+      <p>Web Design</p>
+    </div>
+    <div class="certificate-item">
+      <img src="Images/py_certificate.png" alt="Python Certificate">
+      <p>Python Programming</p>
+    </div>
+    <div class="certificate-item">
+      <img src="Images/unstop.png" alt="Unstop Challenge Certificate">
+      <p>Unstop Challenge</p>
+    </div>
+    <div class="certificate-item">
+      <img src="Images/java+python.png" alt="Java + Python Certificate">
+      <p>Java + Python</p>
+    </div>
+    <div class="certificate-item">
+      <img src="Images/nss.jpeg" alt="NSS Certificate">
+      <p>NSS Volunteer</p>
+    </div>
+  </div>
+
+  <script>
+  const certs = document.querySelectorAll('.certificate-item');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  certs.forEach(cert => observer.observe(cert));
+</script>
+
 </body>
 </html>
