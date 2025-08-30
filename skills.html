@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills</title>
+  <link rel="stylesheet" href="style_skill.css">
+</head>
+<body>
+  <div id="hhh">
+    <h1>SKILLS</h1>
+  </div>
+
+  <div class="skills-container">
+
+    <!-- Programming Languages -->
+    <div class="skill-category">
+      <h2>Programming Languages</h2>
+      <div class="box-container">
+        <div class="skill-box">
+          <p>C / C++</p>
+          <img src="Images/c.png" height="60px">
+        </div>
+        <div class="skill-box">
+          <p>Python</p>
+          <img src="Images/python.png" height="60px">
+        </div>
+        <div class="skill-box">
+          <p>HTML</p>
+          <img src="Images/html.png" height="60px">
+        </div>
+        <div class="skill-box">
+          <p>CSS</p>
+          <img src="Images/css.png" height="60px">
+        </div>
+        <div class="skill-box">
+          <p>Java</p>
+          <img src="Images/java.png" height="60px">
+        </div>
+      </div>
+    </div>
+
+    <!-- Tools and Platforms -->
+    <div class="skill-category">
+      <h2>Tools and Platforms</h2>
+      <div class="box-container">
+        <div class="skill-box">
+          <p>VS Code</p>
+          <img src="Images/vscode.png" height="60px">
+        </div>
+        <div class="skill-box">
+          <p>Linux</p>
+          <img src="Images/linux.png" height="60px">
+        </div>
+        <div class="skill-box">
+          <p>R Studio</p>
+          <img src="Images/rstudio.png" height="60px">
+        </div>
+        <div class="skill-box">
+          <p>XAMPP</p>
+          <img src="Images/xampp.png" height="60px">
+        </div>
+        <div class="skill-box">
+          <p>Cisco</p>
+          <img src="Images/cisco.png" height="60px">
+        </div>
+        <div class="skill-box">
+          <p>Jupyter Notebook</p>
+          <img src="Images/jupyter.png" height="60px">
+        </div>
+        <div class="skill-box">
+          <p>MySQL</p>
+          <img src="Images/sql.png" height="60px">
+        </div>
+        <div class="skill-box">
+          <p>GitHub</p>
+          <img src="Images/github.png" height="60px">
+        </div>
+      </div>
+    </div>
+
+    <!-- Soft Skills -->
+    <div class="skill-category">
+      <h2>Soft Skills</h2>
+      <div class="box-container">
+        <div class="skill-box">
+          <p>Communication</p>
+        </div>
+        <div class="skill-box">
+          <p>Public Relations</p>
+        </div>
+        <div class="skill-box">
+          <p>Leadership</p>
+        </div>
+        <div class="skill-box">
+          <p>Group Communication</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script>
+  const skillBoxes = document.querySelectorAll('.skill-box');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  skillBoxes.forEach(box => observer.observe(box));
+</script>
+
+</body>
+</html>
